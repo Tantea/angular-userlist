@@ -1,0 +1,42 @@
+<mat-toolbar color="primary">
+  <app-hero-search></app-hero-search>
+  <span class="spacer"></span>
+
+<input id="new-hero" #heroName />
+<button type="button" (click)="add(heroName.value, heroName.value, heroName.value, heroName.value, heroName.value, heroName.value, heroName.value, heroName.value); "  mat-icon-button aria-label="Add User">
+  <mat-icon>add</mat-icon>
+  </button>
+  <button mat-icon-button disabled="true" aria-label="Save User">
+    <mat-icon>save</mat-icon>
+  </button>
+</mat-toolbar>
+<div class="main-content">
+  <div class="heroes-wrapper">
+    <div *ngFor="let hero of heroes">
+      <a routerLink="/detail/{{hero.id}}">
+
+
+        <mat-card>
+          <mat-card-header>
+            <img mat-card-sm-image src={{hero.photo}} />
+            <div>
+              <div>{{hero.firstName}}</div>
+              <div>{{hero.lastName}}</div>
+            </div>
+          </mat-card-header>
+          <mat-card-content>
+            <div>{{hero.email}}</div>
+            <div>{{hero.street}}{{', '}}{{hero.city}}{{" | "}}{{hero.country}}</div>
+            <div>{{hero.zipcode}}</div>
+
+          </mat-card-content>
+        </mat-card>
+
+      </a>
+            <button mat-icon-button  (click)="delete(hero)" aria-label="Delete User">
+              <mat-icon>clear</mat-icon>
+            </button>
+
+    </div>
+  </div>
+</div>

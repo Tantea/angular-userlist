@@ -1,0 +1,79 @@
+.heroes-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 24px 16px;
+  font-size: 16px;
+}
+.heroes-wrapper > div {
+  min-height: 236px;
+  min-width: 300px;
+  width: 32%;
+  position: relative;
+}
+.heroes-wrapper > div button {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  color: rgba(255, 255, 255, 0.35);
+  transition: 0.3s;
+}
+.heroes-wrapper > div button:hover {
+  color: #fff;
+  transition: 0.3s;
+}
+.heroes-wrapper a {
+  text-decoration: none;
+}
+
+.mat-mdc-card-header {
+  display: flex;
+  padding: 16px;
+  background: #424242;
+  color: #fff;
+  font-size: 21px;
+  position: static;
+}
+.mat-mdc-card-header .mat-mdc-card-sm-image {
+  width: 80px;
+  height: 80px;
+  margin: 0 16px 0 0;
+  border-radius: 40px;
+}
+.mat-mdc-card-header .mat-mdc-card-sm-image + div {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.4;
+}
+
+.mat-mdc-card-content {
+  display: block;
+  padding: 12px 16px 0 16px;
+  box-sizing: border-box;
+  line-height: 1.4;
+  color: #424242;
+}
+
+.mat-mdc-card {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid rgba(66, 66, 66, 0.3);
+  box-shadow: none;
+  margin: 8px;
+  transition: 0.3s;
+}
+.mat-mdc-card:hover {
+  transition: 0.3s;
+  border: 1px solid rgba(66, 66, 66, 0.1);
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.main-content {
+  overflow-y: auto;
+  height: calc(100% - 64px);
+}/*# sourceMappingURL=heroes-list.component.css.map */

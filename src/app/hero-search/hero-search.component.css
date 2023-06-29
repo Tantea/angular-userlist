@@ -1,0 +1,52 @@
+#search-component {
+  position: relative;
+  width: 200px;
+}
+
+input#search-box {
+  outline: none;
+  height: 28px;
+  padding: 8px;
+  box-sizing: border-box;
+  box-shadow: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 100%;
+  color: #fff;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.13);
+}
+
+input#search-box:focus {
+  background: rgba(255, 255, 255, 0);
+}
+
+.search-dropdown {
+  position: absolute;
+  width: inherit;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 12px 4px;
+  border: 1px solid #c2185b;
+  border-radius: 0 0 2px 2px;
+  z-index: 10;
+}
+.search-dropdown:empty {
+  display: none;
+}
+
+.search-dropdown a {
+  text-decoration: none;
+  color: #c2185b;
+  font-size: 14px;
+  font-weight: 100;
+  display: flex;
+  padding: 0 4px;
+  transition: 0.3s;
+}
+.search-dropdown a:hover {
+  background: rgba(194, 24, 91, 0.12);
+  transition: 0.3s;
+}
+.search-dropdown a + a {
+  margin-top: 2px;
+}/*# sourceMappingURL=hero-search.component.css.map */

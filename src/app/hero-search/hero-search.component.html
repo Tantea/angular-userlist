@@ -1,0 +1,12 @@
+<div id="search-component">
+
+  <input matInput #searchBox id="search-box" (input)="search(searchBox.value)" />
+    <div class="search-dropdown">
+      <div *ngFor="let hero of heroes$ | async">
+        <a routerLink="/detail/{{hero.id}}">
+          {{hero.firstName}}{{' '}}{{hero.lastName}}
+        </a>
+      </div>
+    </div>
+
+</div>

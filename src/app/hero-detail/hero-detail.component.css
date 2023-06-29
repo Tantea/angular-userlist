@@ -1,0 +1,44 @@
+label {
+  color: #435960;
+  font-weight: bold;
+}
+
+input {
+  font-size: 1em;
+  padding: 0.5rem;
+}
+
+.heroes-details-wrapper {
+  display: block;
+  grid-gap: 1%;
+  width: 100%;
+  height: calc(100% - 64px);
+  box-sizing: border-box;
+  padding: 24px 16px;
+  overflow-y: auto;
+}
+.heroes-details-wrapper > div {
+  width: 250px;
+  display: flex;
+}
+.heroes-details-wrapper > div img.mat-mdc-card-sm-image {
+  margin: auto;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+.heroes-details-wrapper > div + div {
+  margin-top: 4px;
+}
+.heroes-details-wrapper > div input {
+  outline: none;
+  height: 28px;
+  padding: 8px;
+  box-sizing: border-box;
+  box-shadow: none;
+  border: 1px solid #c2185b;
+  color: #2c2c2c;
+  width: 100%;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.13);
+}/*# sourceMappingURL=hero-detail.component.css.map */

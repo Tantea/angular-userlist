@@ -1,0 +1,42 @@
+<mat-toolbar color="primary">
+  <app-hero-search disabled></app-hero-search>
+  <span class="spacer"></span>
+
+  <button mat-icon-button  (click)="goBack()" class="example-icon" aria-label="Save User">
+    <mat-icon>undo</mat-icon>
+  </button>
+<input id="new-hero" #heroName />
+<button type="button" disabled mat-icon-button class="example-icon favorite-icon add-button"
+aria-label="Add User">
+  <mat-icon>add</mat-icon>
+  </button>
+  <button mat-icon-button (click)="save()" class="example-icon" aria-label="Save User">
+    <mat-icon>save</mat-icon>
+  </button>
+</mat-toolbar>
+
+<div *ngIf="hero" class="heroes-details-wrapper">
+
+  <div><img mat-card-sm-image src={{hero.photo}} /></div>
+  <div>
+    <input id="hero-firstName" [(ngModel)]="hero.firstName" placeholder="firstName"/>
+  </div>
+  <div>
+    <input id="hero-lastName" [(ngModel)]="hero.lastName" placeholder="lastName"/>
+  </div>
+  <div>
+    <input id="hero-email" [(ngModel)]="hero.email" placeholder="email"/>
+  </div>
+  <div>
+    <input id="hero-street" [(ngModel)]="hero.street" placeholder="street"/>
+  </div>
+  <div>
+    <input id="hero-city" [(ngModel)]="hero.city" placeholder="city"/>
+  </div>
+  <div>
+    <input id="hero-zipcode" [(ngModel)]="hero.zipcode" placeholder="zipcode"/>
+  </div>
+  <div>
+    <input id="hero-country" [(ngModel)]="hero.country" placeholder="country"/>
+  </div>
+</div>
